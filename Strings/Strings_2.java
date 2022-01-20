@@ -1,3 +1,4 @@
+//comparing strings
 import java.util.Scanner;
 
 public class Strings_2{
