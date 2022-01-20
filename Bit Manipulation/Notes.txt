@@ -1,0 +1,72 @@
+Get Bit Operation:
+
+To get the i'th bit of a number n.
+Step 1:
+    Bit Mask: 1<<i
+
+Step 2:
+    Operation: AND
+
+    If AND output contains atleast 1 non-zero bit then the Get Bit output = 1 else Get Bit output = 0
+
+Example:
+Get the 3rd bit(position=2) of a number n. (n=0101)
+Step 1: 
+    Bit Mask: 1<<2
+    0001<<2 ==> 0100 
+Step 2:
+    AND Operation:
+    0100 & 0101 ==> 0100
+    Final Answer = 1
+
+--------------------------------------------------------
+
+Set Bit Operation:
+
+To set the i'th bit of a number n.
+Step 1:
+    Bit Mask: 1<<i
+
+Step 2:
+    Operation: OR
+
+
+Example:
+Get the 2nd bit(position=1) of a number n. (n=0101)
+Step 1: 
+    Bit Mask: 1<<1
+    0001<<1 ==> 0010 
+Step 2:
+    AND Operation:
+    0010 | 0101 ==> 0111
+
+----------------------------------------------------
+
+Clear Bit Operation: (To make the bit as Zero)
+
+To clear the i'th bit of a number n.
+Step 1:
+    Bit Mask: 1<<i
+
+Step 2:
+    Operation: n AND with NOT (Bit Mask)
+
+
+Example:
+Get the 3rd bit(position=2) of a number n. (n=0101)
+Step 1: 
+    Bit Mask: 1<<2
+    0001<<2 ==> 0100 
+Step 2:
+    AND Operation:
+    ~0100 & 0101 ==> 1011 & 0101 ==> 0001
+    Final Answer = 0001
+
+--------------------------------------------------------
+
+Update Bit Operation: (Update a bit to 1 ot 0 based on input bit)
+
+if update bit is 1:
+    Set Bit Operation
+else if update bit is 0:
+    Clear Bit Operation
